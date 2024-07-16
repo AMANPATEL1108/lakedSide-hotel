@@ -4,15 +4,16 @@ package com.dailycodework.lakedsidehotel.controller;
 import java.math.BigDecimal;
 import java.sql.SQLException;
 
-import com.dailycodework.lakedsidehotel.model.Room;
-import com.dailycodework.lakedsidehotel.response.RoomResponse;
-import com.dailycodework.lakedsidehotel.service.IRoomService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+
+import com.dailycodework.lakedsidehotel.model.Room;
+import com.dailycodework.lakedsidehotel.response.RoomResponse;
+import com.dailycodework.lakedsidehotel.service.IRoomService;
 
 import io.jsonwebtoken.io.IOException;
 import lombok.RequiredArgsConstructor;
@@ -40,5 +41,6 @@ public class RoomController {
         System.out.println(response);
         return ResponseEntity.ok(response);
     }
+
 
 }
